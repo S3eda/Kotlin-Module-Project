@@ -24,9 +24,11 @@ class PrintComand {
         while (true) {
             println("Введите название файла")
             var preName = Scanner(System.`in`).nextLine()
-            if (preName.trim() != null){
+            if (preName.trim() != ""){
                 return preName
                 break
+            } else {
+                println("Имя не может быть пустым")
             }
         }
     }
